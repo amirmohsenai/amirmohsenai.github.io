@@ -362,6 +362,51 @@
     .pub-small h4{margin:7px 0 8px;font-size:1.02rem}
     .pub-small p{margin:0;color:var(--muted);font-size:.9rem}
 
+    /* Publication details */
+    .publication-details{
+      margin-top:16px;
+      padding:24px 30px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      background:rgba(255,255,255,.022);
+    }
+    .publication-details h4{
+      margin:0 0 13px;
+      font-size:1rem;
+    }
+    .publication-details p{
+      margin:0;
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.75;
+    }
+    .publication-facts{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px 28px;
+      margin-top:19px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+    }
+    .publication-fact{
+      display:grid;
+      grid-template-columns:112px 1fr;
+      gap:12px;
+      font-size:.82rem;
+    }
+    .publication-fact span:first-child{
+      color:#8794a9;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:.67rem;
+      padding-top:2px;
+    }
+    .publication-fact span:last-child,
+    .publication-fact a{
+      color:var(--soft);
+      overflow-wrap:anywhere;
+    }
+
     /* Education */
     .timeline{
       position:relative;
@@ -555,7 +600,7 @@
           <p class="hero-copy">
             I work on <strong>Trustworthy AI, Vision-Language Models, Computer Vision, and Robot Learning</strong>.
             My research interests focus on making learning systems more reliable in realistic settings through
-            calibration, uncertainty estimation, robustness evaluation, representation learning, and careful experimental design.
+            calibration, uncertainty estimation, robustness evaluation, representation learning, and careful experimental design, with an emerging interest in AI for healthcare and medical image analysis.
           </p>
           <p class="hero-copy">
             My academic background is in Computer Engineering and Artificial Intelligence, with graduate research in
@@ -567,6 +612,7 @@
             <a class="btn" href="https://github.com/amirmohsenai" target="_blank" rel="noopener">GitHub</a>
             <a class="btn" href="https://scholar.google.com/citations?user=iuTRCA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
             <a class="btn" href="https://orcid.org/0009-0001-8307-1861" target="_blank" rel="noopener">ORCID</a>
+            <a class="btn" href="https://www.linkedin.com/in/amir-sharifi-12821b1b8/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
 
@@ -599,7 +645,7 @@
             <div class="section-kicker">01 / Research</div>
             <h2>What I am interested in</h2>
             <p class="section-intro">
-              My work connects machine learning with reliability, perception, multimodal reasoning, and embodied intelligence.
+              My work connects machine learning with reliability, perception, multimodal reasoning, embodied intelligence, and emerging applications in healthcare.
             </p>
           </div>
         </div>
@@ -808,6 +854,53 @@
             </p>
           </article>
         </div>
+
+        <div class="publication-details">
+          <h4>Publication abstract</h4>
+          <p>
+            We propose a new method for skill imitation learning for humanoid robots using Vision Transformers and Time Contrastive Networks.
+            For learning temporal representations of gestures, we compare two leading visual encoders, ViT-B16 and EfficientNetV2S.
+            A triplet loss function with hard mining is utilized to generate discriminative embeddings from consecutive video frames,
+            which provide dense reward signals for deep reinforcement learning. This enables a NAO humanoid robot to learn gesture
+            imitation in the Webots platform. Our experimental results, strengthened by GroupKFold cross-validation, indicate that
+            the ViT-B16 architecture consistently surpasses the fine-tuned EfficientNetV2S model. The embeddings from ViT-B16 form a
+            more well-separated and structured latent space, as evidenced by dimensionality reduction visualizations, demonstrating
+            a superior capture of temporal structure. Finally, the efficacy of our approach is demonstrated by integrating the ViT-B16
+            encoder into a reinforcement learning framework. We present quantitative evidence of policy convergence and qualitative
+            results of the NAO robot successfully imitating a complex gesture, validating our end-to-end method in a practical robotic task.
+          </p>
+
+          <div class="publication-facts">
+            <div class="publication-fact">
+              <span>Authors</span>
+              <span>Amirmohsen Sharifi · Maziar Palhang</span>
+            </div>
+            <div class="publication-fact">
+              <span>Venue</span>
+              <span>2026 International Interdisciplinary Conference on Artificial Intelligence: Engineering, Health, Finance and Humanities (IICAI 2026)</span>
+            </div>
+            <div class="publication-fact">
+              <span>Publisher</span>
+              <span>IEEE</span>
+            </div>
+            <div class="publication-fact">
+              <span>Conference</span>
+              <span>31 May – 01 June 2026 · Tehran, Iran</span>
+            </div>
+            <div class="publication-fact">
+              <span>IEEE Xplore</span>
+              <span>Added 28 July 2026</span>
+            </div>
+            <div class="publication-fact">
+              <span>DOI</span>
+              <a href="https://doi.org/10.1109/IICAI70155.2026.11620811" target="_blank" rel="noopener">10.1109/IICAI70155.2026.11620811 ↗</a>
+            </div>
+            <div class="publication-fact">
+              <span>Paper record</span>
+              <a href="https://ieeexplore.ieee.org/document/11620811/" target="_blank" rel="noopener">IEEE Xplore document 11620811 ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -826,10 +919,10 @@
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-year">Graduate</div>
+            <div class="timeline-year">Graduate<br/>2022-2026</div>
             <div>
               <h3>M.Sc. in Artificial Intelligence</h3>
-              <div class="school">Isfahan University of Technology (IUT), Department of Electrical and Computer Engineering</div>
+              <div class="school">Isfahan University of Technology (IUT), Faculty of Electrical and Computer Engineering</div>
               <p>
                 Graduate study in Artificial Intelligence with research interests spanning deep learning,
                 reinforcement learning, representation learning, computer vision, and robotics.
@@ -838,10 +931,10 @@
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-year">Undergraduate</div>
+            <div class="timeline-year">Undergraduate<br/>2016-2022</div>
             <div>
-              <h3>B.Sc. in Computer Engineering</h3>
-              <div class="school">Isfahan University of Technology (IUT)</div>
+              <h3>B.Sc. in Computer Engineering - Information Technology (IT)</h3>
+              <div class="school">Isfahan University of Technology (IUT), Faculty of Electrical and Computer Engineering</div>
               <p>
                 A foundation in computer engineering, programming, algorithms, systems, and computational methods
                 that led to my later focus on artificial intelligence and machine learning.
@@ -862,6 +955,7 @@
           <div class="keywords">
             Imitation Learning · Time-Contrastive Learning · Vision Transformers · NAO Robot · Deep Reinforcement Learning · Representation Learning
           </div>
+          <p style="margin-top:10px;"><a class="project-link" href="https://github.com/amirmohsenai/humanoid-imitation-learning-vit" target="_blank" rel="noopener">View thesis project overview ↗</a></p>
         </div>
       </div>
     </section>
@@ -955,6 +1049,7 @@
             <a href="https://scholar.google.com/citations?user=iuTRCA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
             <a href="https://orcid.org/0009-0001-8307-1861" target="_blank" rel="noopener">ORCID</a>
             <a href="https://ieeexplore.ieee.org/document/11620811/" target="_blank" rel="noopener">IEEE Xplore</a>
+            <a href="https://www.linkedin.com/in/amir-sharifi-12821b1b8/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
